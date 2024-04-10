@@ -1,0 +1,13 @@
+funçao python = def
+
+ex: 
+	def main():
+	       print("Hello World")
+	
+	def luta():
+	       pass
+
+main()
+
+int(input("Numero Inteiro: "))
+str(variavel) - virou texto;
