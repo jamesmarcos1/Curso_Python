@@ -11,3 +11,27 @@ main()
 
 int(input("Numero Inteiro: "))
 str(variavel) - virou texto;
+
+import tkinter
+
+window = tkinter.Tk()
+window.mainloop()
+
+window.title() => () sinaliza que estou acessando aquela propiedade 
+
+Menu
+
+# Menu
+main_menu = tkinter.Menu(window) #opções
+
+file_menu = tkinter.Menu(main_menu, tearoff=0) #tearoff=0 tira
+file_menu.add_command(label="New", command=NewFile)
+file_menu.add_command(label='Save', command=Save)
+file_menu.add_command(label='Open...', command=Open)
+file_menu.add_command(label='Exit', command=window.quit()) # quit e uma função do tkinter
+
+
+main_menu.add_cascade(label='File', menu=file_menu)
+window.config(menu=main_menu)
+
+criei a variavel size que e acessivel somente dentro da minha função
